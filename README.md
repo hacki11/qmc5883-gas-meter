@@ -33,7 +33,7 @@ HMC5883 Sensors are not easy to get, but QMC5883 are. Therfor here is a library 
 
 
 
-#Inspired and credits:
+# Inspiration and credits:
 
 - http://www.kompf.de/tech/gascountmag.html
 - https://github.com/hacki11/qmc5883-gas-meter
