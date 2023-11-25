@@ -1,11 +1,11 @@
 # qmc5883-gas-meter
-Read the gas consumption with a QMC5883 magnetometer via I2C or USB and send it to a MQTT broker like ioBroker
+Read the gas consumption with a QMC5883 or HMC5883 magnetometer via I2C or USB and send it to a MQTT broker like ioBroker
 
-HMC5883 Sensors are not easy to get, but QMC5883 are. Therfor here is a library to read the gas meter (i have a BK G4) and send the values to ioBroker (MQTT Adapter).
+HMC5883 Sensors are not easy to get, but QMC5883 are, and both work pretty similarly, although not quite the same. Therfore here is a library to read the gas meter (i have a BK G4) and send the values to ioBroker (MQTT Adapter).
 
 # Prerequisites
 - Gas counter with rotating magnet
-- Digital magnetometer QMC5883 (on breakout board)
+- Digital magnetometer QMC5883 or HMC5883 (on breakout board)
 - Raspberry/Arduino OR I2C/USB Adapter like me (CH341 USB)
 
 # qmc5883.py
@@ -22,7 +22,7 @@ HMC5883 Sensors are not easy to get, but QMC5883 are. Therfor here is a library 
 # Setup
 - Attach the magnetometer on your gas meter
 - setup the I2C connection [CH341 I2C/USB driver](https://github.com/gschorcht/i2c-ch341-usb)
-- configure constants of iobroker-client.py
+- use command line arguments of iobroker-client.py to configuration (./iobroker-client --help)
 - keep the program running and find the trigger_level for your setup
 
 # Grafana
